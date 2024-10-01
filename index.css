@@ -1,0 +1,453 @@
+html {
+  max-width: 600px;
+  min-width: 600px;
+  margin: 0 auto;
+}
+
+:root{
+   --green-color: #16DB99; 
+   --black-color: #000;
+   --black-divider-color: #393333;
+   --gray-divider-color: #D2D2D2;
+   --white-color: #fff;
+   --green-font-color: #065F46;
+   --green-background-color: #ECFDF5;
+}       
+
+body{
+    max-width: 600px;
+}
+
+/*----------------------------------------------------------------------------
+                                               HEADER 
+ ------------------------------------------------------------------------------*/
+
+header {
+background-image: url('/assets/header.png');
+position: inherit;
+width: 600px;
+height: 167px;
+background-size: cover;
+padding: 10px;
+}
+
+h1 {
+  /* Jimmy’s Diner */
+
+position: inherit;
+
+font-family: "Smythe", system-ui;
+font-weight: 400;
+font-style: normal;
+font-size: 2.4rem;
+line-height: 30px;
+color: #FFFFFF;
+transform: translateX(10%);
+
+}
+
+h2 {
+/* The best burgers and pizzas in town. */
+
+position: inherit;
+
+font-family: "Smythe", system-ui;
+font-weight: 400;
+font-style: normal;
+font-size: 1.4rem;
+line-height: 1px;
+color: #FFFFFF;
+transform: translateX(10%);
+
+}
+
+
+/* ---------------------------------------------------------------------------------
+                                                MENU 
+---------------------------------------------------------------------------------*/
+
+
+main {
+    padding-top:112px;
+
+}
+
+.emoji {
+  font-size: 4.92rem;
+    margin-right: 30px;
+    position: inherit;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+
+    margin-left: 46px;
+    height: 140px;
+    width: 508px;
+    border-bottom: 1px solid #D2D2D2;
+    padding-top: 52px;
+    padding-bottom: 51px;
+    margin-bottom: 20px;
+    border-bottom: #8B8B8B solid 1px;
+    justify-content: space-between;
+
+
+
+    color: #000;
+    font-family: "Smythe", system-ui;
+    font-size: 1.5rem;
+    line-height: 17px;
+  
+    
+
+  }
+
+
+.item-price {
+  font-size: 1.25rem;
+
+}
+
+.item-description {
+    font-size: 1rem;
+    color: #0000004a;
+    align-content: flex-start;
+}
+
+.menu-info {
+    flex: 1;
+
+}
+
+.btn-addItem {
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    left: 504px;
+    border: none;
+    margin-bottom: 10%;
+    border-radius: 50%;
+
+}
+
+
+/*------------------------------------------------------------------------------------------
+                                                  CHECKOUT 
+--------------------------------------------------------------------------------------------------------------------------*/
+
+
+.cart-container {
+  position: inherit;
+  font-family: "Smythe";
+  width: 508px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 45px;
+  padding-right: 45px;  
+  justify-content: center;
+  border: none;
+}
+
+.cart-container-title{
+  font-size: 1.75rem;
+  text-align: center;
+  border: none;
+  
+}
+
+.cart-items-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: none;
+}
+
+.cartItems{
+  display:flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #D2D2D2;
+  border: none;
+}
+
+  .cartItems .item {
+    color: black;
+    font-size: 1.75rem;
+    font-family: Smythe;
+    font-weight: 400;
+    line-height: 18px;
+    border: none;
+  }
+
+  .cartItems .item-title {
+    color: black;
+    font-size: 1.75rem;
+    font-family: Smythe;
+    font-weight: 400;
+    display: flex;
+    border: none;
+  }
+
+  .cartItems .item-price {
+    color: black;
+    font-size: 1.75rem;
+    font-family: Smythe;
+    font-weight: 400;
+    text-align: right;
+    border: none;
+  }
+  
+  .price {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+  }
+
+  .btn-removeItem {
+    display: flex;
+    flex: 2;
+    position: inherit;
+    color: #BBB;
+    font-family: "Smythe";
+    font-size: 0.75rem;
+    margin-top: 15px;
+    border: none;
+
+  }
+
+  
+  .cart-container .divider {
+    width: 100%;
+    height: 2px;
+    background-color: #393333;
+    border: none;
+  }
+  
+
+  .total-price {
+    display: flex;
+    justify-content: space-between;
+    position: inherit;
+    font-size: 1.75rem;
+    font-family: Smythe;
+    font-weight: 400;
+    border: none;
+  }
+
+
+.purchase-btn {
+  display: flex;
+  width: 508px;
+  padding: 18px 175px 18px 194px;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+
+  color: var(--white, #FFF);
+  font-family: Verdana;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  background: #16DB99;
+  cursor: pointer;
+  border: none;
+
+}
+
+
+/* ---------------------------------------------------------------------------------
+                                                     PAYMENT 
+---------------------------------------------------------------------------------------------*/
+
+.modal {
+  
+  display: flex;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 524px;
+  height: 542.24px;
+  
+
+  background: #FFFFFF;
+  z-index: 2;
+  filter: drop-shadow(5.18654px 5.18654px 255.437px rgba(0, 0, 0, 0.5));
+  align-items: center;
+  justify-content: center;
+
+
+  }
+
+
+
+.modal .title {
+
+width: 304.37px;
+height: 40.92px;
+
+margin-left: 15%;
+margin-right: 10%;
+margin-top: -73%;
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 31px;
+
+color: #000000;
+}
+
+
+
+.modal input{
+  width: 100%;
+  display: block;
+  margin: 23px auto;
+  gap: 23px;
+  font-size: 1.25rem;
+  margin-top: 5%;
+
+  /* Frame 12 */
+
+box-sizing: border-box;
+width: 475.91px;
+height: 71.3px;
+border: 1.29664px solid #757575;
+border-radius: 3.88991px;
+} 
+
+.modal input::placeholder{
+  padding: 28px;
+}
+
+.modal .pay-button {
+    width: 475.91px;
+    height: 71.3px;
+    top: 47px;
+    bottom: 34px;
+    margin-top: 5%;
+    
+    color: var(--white, #FFF);
+    font-family: Verdana;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background: #16DB99;
+    border: none;
+    
+}
+
+
+form {
+
+margin-top: 12%;
+
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------
+                                                        THANKS 
+------------------------------------------------------------------------------------*/
+.thanks-message {
+  display: flex;
+
+  position: absolute;
+  text-align: center; 
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 3px;
+  transform:translateX(10%);  
+
+  width: 504px;
+  height: 120px;
+  bottom: -10%;
+
+  font-family: "Smythe";
+  font-size: 1.75rem;
+  background-color: #16db99b6;
+  color: #004d1a;
+}
+
+/* Utility Classes */
+
+.hidden {
+  display: none;
+}
+
+.emoji, .btn-addItem, .btn-removeItem, .purchase-btn, .pay-button{
+  cursor: pointer;
+}
+
+
+
+
+/* 
+body {
+    margin: 0;
+} 
+
+
+.item-0 { 
+position: absolute;
+width: 508px;
+height: 140px;
+left: 46px;,
+top: 234px;
+}
+
+.item-1 {
+position: absolute;
+width: 508px;
+height: 140px;
+left: 46px;
+top: 419px;
+}
+
+.item-2 {
+position: absolute;
+width: 508px;
+height: 140px;
+left: 46px;
+top: 604px;
+}
+
+.your-order {
+position: absolute;
+width: 508px;
+height: 319px;
+left: 46px;
+top: 789px;
+}
+
+.payment-modal {
+position: absolute;
+width: 524px;
+height: 542.24px;
+left: 38px;
+top: 292px;
+
+filter: drop-shadow(5.18654px 5.18654px 255.437px rgba(0, 0, 0, 0.5));
+}
+
+.thanks {
+position: absolute;
+width: 504px;
+height: 120px;
+left: 50px;
+top: 789px;
+}
+
+.enter-card {
+    
+} */ 
