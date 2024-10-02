@@ -314,8 +314,9 @@ color: #000000;
   gap: 23px;
   font-size: 1.25rem;
   margin-top: 5%;
+  padding: 28px;
 
-  /* TO DO: Correct input fields inside typing with margins  */
+
 
 box-sizing: border-box;
 width: 475.91px;
@@ -324,9 +325,6 @@ border: 1.29664px solid #757575;
 border-radius: 3.88991px;
 } 
 
-.modal input::placeholder{
-  padding: 28px;
-}
 
 .modal .pay-button {
     width: 475.91px;
